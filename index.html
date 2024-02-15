@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="display" value="4 + 5 = 9" readonly>
+        </div>
+        
+       <div class="touches">
+        <div>
+            <input type="button" class="digit" value="1">
+            <input type="button" class="digit" value="2">
+            <input type="button" class="digit" value="3">
+            <input type="button" id = "plus" value="+" style="background-color: orange;">
+        </div>
+        <div>
+            <input type="button" class="digit" value="4">
+            <input type="button" class="digit" value="5">
+            <input type="button" class="digit" value="6">
+            <input type="button" id="moins"  value="-" style="background-color: orange;">
+        </div>
+       <div>
+            <input type="button" class="digit" value="7">
+            <input type="button" class="digit" value="8">
+            <input type="button" class="digit" value="9">
+            <input type="button" id="times" value="*" style="background-color: orange;">
+       </div>
+       <div>
+        <input type="button" id="erzr" value="C"  style="background-color: red;">
+        <input type="button" class="digit" value="0">
+        <input type="button" value="=" id="equal" style="background-color: green;">
+        <input type="button" value="/" id="div" style="background-color: orange;">
+       </div>
+       </div>
+        
+    </div>
+
+    <script>
+       $('input.digit').click(function() {
+        alert($('#display').val);
+      });
+    </script>
+</body>
+</html>
